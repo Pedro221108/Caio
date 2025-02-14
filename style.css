@@ -1,0 +1,32 @@
+/* Reset básico */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c0c0c0, #FFA4ED, #a0a0a0, #FFDDEC); /* Efeito metálico */
+    background-size: 400% 400%;
+    animation: metallic 5s infinite linear; /* Animação do brilho */
+}
+
+/* Efeito de brilho dinâmico */
+@keyframes metallic {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Estilo do título */
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #4d473d, #ff0076, #F40076, #322711);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
